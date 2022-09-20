@@ -1,3 +1,4 @@
+print("Enter a value to evaluate: ")
 user_input = gets.to_i
 
 def check_square (number)
@@ -16,4 +17,6 @@ end
 
 if user_input == 0 || check_square(user_input)
   puts("Value is a perfect square!")
+else
+  puts("Value is not a perfect square...")
 end
