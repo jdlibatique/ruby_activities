@@ -12,8 +12,16 @@ puts(h)
 # test = contact_data.to_h
 
 test = (contact_data[0].join(", ").split(", "))
-contact_data.each { |i| puts "#{i[0]}" }
-# puts(test)
+
+counter = 0
+contact_data.each { |i|
+  temp_hash = { email: i[0], address: i[1], phone: i[2] }
+  puts(temp_hash)
+  contacts[contacts.keys[counter]].
+  puts(contacts)
+  counter += 1
+}
+
 
 # Expected output:
 #  {
