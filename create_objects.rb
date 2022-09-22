@@ -14,6 +14,7 @@ class Student
   end
 end
 
+#Code below is for testing
 potato = Student.new("Potato", "Computer Science", "101")
 jap = Student.new("Jap", "Tourism", "102")
 kenneh = Student.new("Kenneh", "Information Technology", "103")
