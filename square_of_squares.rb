@@ -2,7 +2,7 @@ print("Enter a value to evaluate: ")
 user_input = gets.to_i
 
 def check_square (number)
-  if number <= 1
+  if number <= 0
     return false
   end
   counter = 1
