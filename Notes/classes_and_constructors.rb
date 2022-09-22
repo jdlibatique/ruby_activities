@@ -21,4 +21,19 @@ class Car
   #   @brand
   # end
 
+  def check_and_fix_engine
+    @engine_status = :off
+    #Enter logic needed to fix engine here
+    puts "Engine fixed, turning on"
+    @engine_status = :on
+  end
+
+  def turn_engine_on
+    @engine_status = :on
+  end
+
+  def check_engine_status
+    puts "Engine is currently #{@engine_status}"
+  end
+
 end
