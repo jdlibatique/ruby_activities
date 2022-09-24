@@ -26,10 +26,10 @@ class User
   def login
     # puts "User logged in. IP address: #{@ip_address}"
     # puts "#{self} logged in. IP address: #{@ip_address}"
-    puts "#{self.class.name} logged in. IP address: #{@ip_address}"
+    # puts "#{self.class.name} logged in. IP address: #{@ip_address}"
+    puts "#{@username} logged in. IP address: #{@ip_address}"
   end
 end
-
 
 class Admin < User
   include AdminPermission
@@ -38,15 +38,12 @@ class Admin < User
   end
 end
 
-
 class Buyer < User
   include BuyerPermission
   def buyer_login
     login
   end
 end
-
-
 
 ## execute
 
