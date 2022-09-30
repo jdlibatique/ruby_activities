@@ -1,9 +1,9 @@
 def is_isogram()
 
   print "Enter a string to check if it's an isogram: "
-  isogram = gets.chomp
+  input = gets.chomp
 
-  string_array = isogram.downcase.split("").sort
+  string_array = input.downcase.split("").sort
   counter = 0
 
   while counter < string_array.length
