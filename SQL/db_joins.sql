@@ -28,16 +28,16 @@
 -- VALUES ('DFA and NDFA confuses me', null);
 
 SELECT * FROM notes;
---
--- SELECT * FROM students
---     INNER JOIN notes n on students.id = n.student_id;
---
--- SELECT * FROM students
---     LEFT JOIN notes n on students.id = n.student_id;
---
--- SELECT * FROM students
---     RIGHT JOIN notes n on students.id = n.student_id;
---
--- SELECT * FROM students
---     FULL OUTER JOIN notes n on students.id = n.student_id;
+
+SELECT * FROM students
+    INNER JOIN notes n on students.id = n.student_id;
+
+SELECT * FROM students
+    LEFT JOIN notes n on students.id = n.student_id;
+
+SELECT * FROM students
+    RIGHT JOIN notes n on students.id = n.student_id;
+
+SELECT * FROM students
+    FULL OUTER JOIN notes n on students.id = n.student_id;
 
