@@ -6,7 +6,7 @@ def is_isogram()
   string_array = input.downcase.split("").sort
   counter = 0
 
-  while counter < string_array.length
+  while counter < string_array.length do
     if string_array[counter] == string_array[counter + 1]
       return false
     end
