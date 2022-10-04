@@ -14,7 +14,7 @@ def disemvowel(str)
   filter = ['a', 'e', 'i', 'o', 'u']
   output = ""
   str.each_char do | index |
-    output << index if filter.none? index.downcase
+    output << index if filter.none? index.downcase # Can also use unless filter.include?
   end
   output
 end
