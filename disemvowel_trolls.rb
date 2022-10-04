@@ -1,6 +1,14 @@
 # def disemvowel(str)
 #   str.delete("aeiouAEIOU")
 # end
+#
+# def disemvowel(str)
+#   output = ""
+#   str.each_char do | index |
+#     output << index unless "aeiou".include? index.downcase
+#   end
+#   output
+# end
 
 def disemvowel(str)
   filter = ['a', 'e', 'i', 'o', 'u']
