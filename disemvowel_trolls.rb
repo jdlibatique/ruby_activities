@@ -5,8 +5,8 @@
 def disemvowel(str)
   filter = ['a', 'e', 'i', 'o', 'u']
   output = ""
-  (0..str.length).each do | index |
-    output << str[index].to_s if filter.none? str[index].to_s.downcase
+  str.each_char do | index |
+    output << index if filter.none? index.downcase
   end
   output
 end
