@@ -13,4 +13,4 @@ end
 
 puts disemvowel("this sucks yo")
 puts disemvowel("hello world")
-puts disemvowel("strange things happening here")
+puts disemvowel("StRaNgE things happening here")
